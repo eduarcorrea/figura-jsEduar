@@ -1,0 +1,227 @@
+*{margin:0;
+padding: 0;
+
+
+}
+body{
+width: 100%;
+height: 100%;
+background: url("../img/images.jfif");
+background-size: cover;
+
+}
+
+
+section {
+width: 90%;
+border: 2px solid #fff;
+margin: 40px auto;
+display: flex;
+
+}  
+section .cont-botones{
+
+width: 50%;
+min-height: 500px;
+text-align: center;
+padding: 40px  20px;
+border: 2px  solid #cc1c1c;
+backdrop-filter: blur(5px);
+
+}
+/* cont-figura */
+section .cont-figura{
+
+    width: 50%;
+    min-height: 50px;
+    text-align: center;
+    padding: 40px  20px;
+    border: 2px  solid #fff;
+    backdrop-filter: blur(5px);
+    
+    }
+
+    h2{
+font-size: 26px;
+color: rgba(255, 123, 0, 0.918);
+margin-bottom: 50px;
+/*font-family: ;*/
+
+margin-bottom: 50px;
+
+    }
+
+    .cont-botones button{
+    padding: 12px  30px;
+    font-size: 20px;
+
+    background: transparent;
+    color:aqua;
+    border: 2px  solid #d31414;
+     margin: 1opx;
+    }
+
+    .cont-botones button:cover{
+
+
+        background: yellowgreen;
+        color:blueviolet;
+
+    }
+    #figura{
+ width: 220px;
+ height: 220px;
+ background: #fff;
+ border: 2px solid purple;
+ margin:10px  ;
+ transition: 1s;
+}
+
+    #figura.CIRCULO{
+
+border-radius: 50%;
+width: 220px;
+height: 220px;
+background: #169c3e ;
+margin: 10px auto;
+transition: 1s;
+
+    }
+
+    #figura.RECTANGULO{
+        height: 150px;
+  width: 220px;
+  background-color: #555;
+  margin: 10px auto;
+
+  transition: 1s;   
+        
+        
+        
+        /*border-style: rectangle;
+        width: 220px;
+        height: 150;
+        
+        background: #000 ;
+        margin: 10px auto;
+
+        transition: 1s;*/
+
+      }
+   
+
+    #figura.TRIANGULO{
+      
+        width: 0px;
+        height: 0px;
+        background: transparent;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+        border-bottom: 210px solid #169c3e;
+    }
+
+  #figura.GIRAR{
+
+ transform: rotate(360deg);
+background: #cc1c1c;
+
+  }
+  #figura.ARRIBA{
+    transform: translateY(-100px);
+    background: #7777;
+}
+#figura.ABAJO{
+    transform: translateY(+100px);
+}
+#figura.IZQUIERDA{
+    transform: translateX(-100px);
+}
+#figura.DERECHA{
+    transform: translateX(+100px);
+}
+#figura.OCULTAR{
+    display: none;  
+}
+#figura.GIF{
+  background: url("../img/200w.webp");    
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+}
+#figura.DEGRADADO{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient( to bottom right, #fff, rgb(255, 0, 140), rgb(180, 180, 13));
+}
+
+.paneliz{
+    width: 350px;
+    height: 100vh;
+    position: absolute;
+    left: -450px;
+    top: 0;
+    z-index: 999;
+    background: #fff;
+    padding: 50px 40px;
+    transition: .5s;
+ }
+ .paneliz h3{
+    font-size: 30px;
+    color: rgb(42, 38, 38);
+ }
+ .paneliz ul a{
+    display: block;
+    padding: 10px 15px;
+    margin: 8px 0;
+    max-width: 250px;
+    background: #1233;
+    color: #fff;
+ }
+ .paneliz.activo{
+    left: 0;
+ }
+.close{
+    position: absolute;
+    right: 30px;
+    top: 25;
+    color: #999;
+    text-decoration: none;
+    font-size: 25px;
+}
+.panelsup{
+    background-image: url("../img/neom-9f7oiGARGIg-unsplash.jpg");
+    width: 20%;
+    background-size: cover;
+    height: 25vh;
+    position: absolute;
+    left: -100%;
+    top:  0px;
+    z-index: 999;
+    bottom: 500px;
+    transition: .5s;
+   
+}
+.panelsup h4{
+    font-size: 30px;
+    color: rgb(42, 38, 38);
+}
+.close{
+    position: absolute;
+    right: 30px;
+    top: 25;
+    color: blue;
+    text-decoration: none;
+    font-size: 25px;
+}
+.panelsup.activo{
+    left: 0;
+}
+.panelsup ul a{
+    display: block;
+    padding: 10px 15px;
+    margin: 8px 0;
+    max-width: 250px;
+    background: #1233;
+    color: #fff;
+ }
+
